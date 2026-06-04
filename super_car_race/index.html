@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Super Neon Car Race</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="game-wrapper">
+    <div class="hud">
+      <div class="hud-box">Score: <span id="score">0</span></div>
+      <div class="hud-box">Level: <span id="level">1</span></div>
+      <div class="hud-box">Speed: <span id="speed">0</span></div>
+      <div class="hud-box">Health: <span id="healthText">100</span>%</div>
+    </div>
+
+    <div class="health-bar-wrap">
+      <div id="healthBar" class="health-bar"></div>
+    </div>
+
+    <canvas id="gameCanvas" width="480" height="800"></canvas>
+
+    <div id="startScreen" class="overlay show">
+      <h1>SUPER NEON CAR RACE</h1>
+      <p>Arrow Left / Arrow Right or A / D to move</p>
+      <p>Space = Nitro Boost</p>
+      <p>P = Pause</p>
+      <button id="startBtn">Start Game</button>
+    </div>
+
+    <div id="pauseScreen" class="overlay">
+      <h1>Paused</h1>
+      <p>Press P to Resume</p>
+    </div>
+
+    <div id="gameOverScreen" class="overlay">
+      <h1>Game Over</h1>
+      <p>Final Score: <span id="finalScore">0</span></p>
+      <button id="restartBtn">Restart</button>
+    </div>
+  </div>
+
+  <div class="mobile-controls">
+    <button id="leftBtn">⬅</button>
+    <button id="nitroBtn">⚡ Nitro</button>
+    <button id="rightBtn">➡</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
